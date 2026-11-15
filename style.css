@@ -141,10 +141,15 @@ h3 { font-size: 1.1rem; margin: 0; font-weight: 700; }
 }
 
 @media (max-width: 860px) {
-  .hero { grid-template-columns: 1fr; gap: 32px; padding-block: 40px 24px; }
-  .hero-foto { order: -1; width: 200px; }
-  .hero-foto img { width: 200px; height: 200px; }
+  /* Celular e tablet: hero centralizado, foto em cima com anel na cor de destaque. */
+  .hero { grid-template-columns: 1fr; justify-items: center; text-align: center; gap: 24px; padding-block: 36px 20px; }
+  .hero-foto { order: -1; }
+  .hero-foto img { width: 168px; height: 168px; box-shadow: 0 0 0 4px var(--fundo), 0 0 0 6px var(--destaque), var(--sombra); }
   .selo { display: none; }
+  .status { font-size: .8rem; margin-bottom: 14px; }
+  .cargo { margin: 10px 0 14px; font-size: 1.02rem; }
+  .pitch { margin-inline: auto; font-size: 1rem; }
+  .hero .acoes { justify-content: center; }
   .numeros { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .projeto, .projeto.invertido { grid-template-columns: 1fr; gap: 20px; }
   .projeto.invertido .projeto-img { order: 0; }
@@ -155,5 +160,12 @@ h3 { font-size: 1.1rem; margin: 0; font-weight: 700; }
 @media (max-width: 640px) {
   .links a { display: none; }
   .marca span:last-child { font-size: .95rem; }
+  /* Botões do hero: "Ver projetos" na largura toda, os outros dois lado a lado, fáceis de tocar. */
+  .hero .acoes { display: grid; grid-template-columns: 1fr 1fr; width: 100%; max-width: 360px; }
+  .hero .acoes .primario { grid-column: 1 / -1; }
+  .hero .btn { min-height: 46px; }
+  .status-extra { display: none; }
+  .numeros > div { padding: 14px 12px; }
+  .numeros b { font-size: 1.25rem; }
   .linha > li { grid-template-columns: 1fr; gap: 4px; }
 }
