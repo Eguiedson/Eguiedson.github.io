@@ -3,164 +3,236 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Eguiedson Cardoso Filho · Analista de TI</title>
-  <meta name="description" content="Analista de TI com experiência em suporte corporativo e automação de processos com Power Platform. Itumbiara – GO.">
-  <meta property="og:title" content="Eguiedson Cardoso Filho · Analista de TI">
-  <meta property="og:description" content="Suporte corporativo, Power Apps, Power Automate e Power BI. Em formação em SAP ABAP.">
-  <meta property="og:image" content="https://eguiedson.github.io/assets/eguiedson.jpg">
-  <link rel="icon" href="assets/eguiedson.jpg">
+  <title>Eguiedson Cardoso Filho · Analista de TI e Power Platform</title>
+  <meta name="description" content="Analista de TI com dois anos em suporte corporativo e automação de processos com Power Apps, Power Automate e Power BI. Itumbiara – GO. Estudando SAP ABAP.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://eguiedson.github.io/">
+  <meta property="og:title" content="Eguiedson Cardoso Filho · Analista de TI e Power Platform">
+  <meta property="og:description" content="Suporte corporativo (ServiceNow, GLPI) e automação com Power Apps e Power Automate. Projetos, experiência e contato.">
+  <meta property="og:image" content="https://eguiedson.github.io/assets/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#0b63c5">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@600;700;800&display=swap">
   <link rel="stylesheet" href="style.css">
+  <script>
+    // Aplica o tema salvo antes de desenhar a página, para não piscar.
+    try { var t = localStorage.getItem('tema'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
 </head>
 <body>
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
   <header class="topo">
-    <nav class="nav">
-      <a class="marca" href="#inicio">Eguiedson<span>.</span></a>
+    <nav class="nav casca" aria-label="Seções">
+      <a class="marca" href="#inicio" aria-label="Início">
+        <span class="monograma" aria-hidden="true">EC</span>
+        <span>Eguiedson Cardoso</span>
+      </a>
       <div class="links">
-        <a href="#sobre">Sobre</a>
-        <a href="#experiencia">Experiência</a>
         <a href="#projetos">Projetos</a>
+        <a href="#experiencia">Experiência</a>
+        <a href="#competencias">Competências</a>
         <a href="#contato">Contato</a>
+        <button class="tema" id="tema" type="button" aria-label="Alternar tema claro e escuro">
+          <svg class="sol" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+          <svg class="lua" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        </button>
       </div>
     </nav>
   </header>
 
-  <main>
-    <section id="inicio" class="hero">
-      <img class="foto" src="assets/eguiedson.jpg" alt="Foto de Eguiedson Cardoso Filho" width="200" height="200">
-      <div>
-        <p class="kicker">Itumbiara – GO · remoto ou presencial na região</p>
+  <main id="conteudo">
+    <section id="inicio" class="hero casca">
+      <div class="hero-texto">
+        <p class="status"><span class="ponto" aria-hidden="true"></span>Aberto a oportunidades · remoto ou região de Itumbiara – GO</p>
         <h1>Eguiedson Cardoso Filho</h1>
         <p class="cargo">Analista de TI · Power Platform · Automação de processos</p>
-        <p class="resumo">
-          Dois anos de TI corporativa na Positivo S+, entre o atendimento de chamados no ServiceNow e no GLPI
-          e a construção de aplicações internas em Power Apps e automações em Power Automate que tiraram
-          trabalho manual da operação. Formação técnica industrial pelo SENAI e passagem por multinacional
-          do agro. Hoje curso Engenharia de Software e estudo SAP ABAP.
+        <p class="pitch">
+          Dois anos de TI corporativa na Positivo S+: atendi chamados no ServiceNow e no GLPI e construí
+          aplicações em Power Apps e automações em Power Automate que tiraram trabalho manual da operação.
+          Tenho formação técnica industrial pelo SENAI, então converso bem com quem está no chão de fábrica.
         </p>
         <div class="acoes">
-          <a class="btn primario" href="https://www.linkedin.com/in/eguiedson-cardoso-filho-a59444230" target="_blank" rel="noopener">LinkedIn</a>
-          <a class="btn" href="mailto:eguiedsonc2000@gmail.com">E-mail</a>
-          <a class="btn" href="https://github.com/Eguiedson" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn primario" href="#projetos">Ver projetos</a>
+          <a class="btn" href="https://www.linkedin.com/in/eguiedson-cardoso-filho-a59444230" target="_blank" rel="noopener">LinkedIn</a>
+          <button class="btn" type="button" data-copiar="eguiedsonc2000@gmail.com">Copiar e-mail</button>
         </div>
       </div>
+      <figure class="hero-foto">
+        <img src="assets/eguiedson.jpg" alt="Foto de Eguiedson Cardoso Filho" width="320" height="320">
+        <figcaption class="selo">
+          <b>Power Apps · Power Automate</b>
+          <span>ServiceNow · GLPI · Power BI</span>
+        </figcaption>
+      </figure>
     </section>
 
-    <section id="sobre">
-      <h2>O que eu faço</h2>
-      <div class="grade">
-        <article class="cartao">
-          <h3>Power Platform</h3>
-          <p>Aplicações internas em Power Apps, fluxos em Power Automate, dashboards em Power BI e listas e bases de conhecimento em SharePoint.</p>
-          <ul class="tags"><li>Power Apps</li><li>Power Automate</li><li>Power BI</li><li>SharePoint</li></ul>
-        </article>
-        <article class="cartao">
-          <h3>Suporte e ITSM</h3>
-          <p>Chamados do registro ao encerramento, gestão de incidentes, monitoramento de disponibilidade e atendimento direto a áreas de negócio.</p>
-          <ul class="tags"><li>ServiceNow</li><li>GLPI</li><li>SolarWinds</li><li>N1/N2</li></ul>
-        </article>
-        <article class="cartao">
-          <h3>Indústria e processos</h3>
-          <p>Formação em instrumentação e automação industrial e vivência em indústria de grande porte: entendo o chão de fábrica e converso com a operação.</p>
-          <ul class="tags"><li>Instrumentação</li><li>Automação industrial</li><li>Logística</li></ul>
-        </article>
-      </div>
+    <section class="numeros casca" aria-label="Resumo">
+      <div><b>2 anos</b><span>de TI corporativa na Positivo S+</span></div>
+      <div><b>3 empresas</b><span>Positivo, Louis Dreyfus e CANPACK</span></div>
+      <div><b>5 cursos</b><span>técnicos pelo SENAI e pelo IFG</span></div>
+      <div><b>2026</b><span>início de Engenharia de Software</span></div>
     </section>
 
-    <section id="experiencia">
-      <h2>Experiência</h2>
+    <section id="projetos" class="secao casca">
+      <header class="cab">
+        <p class="rotulo">Projetos</p>
+        <h2>O processo que eu atendia, construído do zero</h2>
+        <p class="sub">Projetos pessoais de estudo, sem dados de empresa. Os sistemas que construí na Positivo pertencem à empresa e não estão aqui.</p>
+      </header>
+
+      <article class="projeto">
+        <a class="projeto-img" href="https://eguiedson.github.io/central-de-chamados/" target="_blank" rel="noopener" aria-label="Abrir a Central de Chamados">
+          <picture>
+            <source srcset="assets/central-escuro.png" media="(prefers-color-scheme: dark)">
+            <img src="assets/central-claro.png" alt="Tela da Central de Chamados com indicadores, formulário e fila ordenada pelo prazo de SLA" width="1280" height="830" loading="lazy">
+          </picture>
+        </a>
+        <div class="projeto-txt">
+          <h3>Central de Chamados</h3>
+          <dl>
+            <div><dt>Problema</dt><dd>Numa fila de suporte, o chamado que vai estourar o prazo se perde no meio dos outros.</dd></div>
+            <div><dt>Solução</dt><dd>Fila ordenada por quem vence primeiro, SLA por prioridade (4 h a 72 h) com alerta em amarelo e vermelho, e indicadores de SLA cumprido.</dd></div>
+          </dl>
+          <ul class="tags"><li>JavaScript</li><li>HTML</li><li>CSS</li><li>localStorage</li></ul>
+          <div class="acoes">
+            <a class="btn primario" href="https://eguiedson.github.io/central-de-chamados/" target="_blank" rel="noopener">Abrir o app</a>
+            <a class="btn" href="https://github.com/Eguiedson/central-de-chamados" target="_blank" rel="noopener">Ver código</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="projeto invertido">
+        <a class="projeto-img terminal" href="https://github.com/Eguiedson/scripts-suporte-ti" target="_blank" rel="noopener" aria-label="Ver os scripts de suporte">
+          <img src="assets/scripts-terminal.png" alt="Terminal do PowerShell com a checagem de saúde mostrando OK, ATENÇÃO e PROBLEMA" width="1060" height="470" loading="lazy">
+        </a>
+        <div class="projeto-txt">
+          <h3>Scripts de suporte de TI</h3>
+          <dl>
+            <div><dt>Problema</dt><dd>Chamado de "computador lento" começa sempre pelas mesmas cinco checagens, feitas à mão.</dd></div>
+            <div><dt>Solução</dt><dd>Checagem de saúde com OK, ATENÇÃO e PROBLEMA, inventário da máquina em HTML e limpeza de temporários com modo de simulação.</dd></div>
+          </dl>
+          <ul class="tags"><li>PowerShell</li><li>Windows</li><li>Suporte N1/N2</li></ul>
+          <div class="acoes">
+            <a class="btn primario" href="https://github.com/Eguiedson/scripts-suporte-ti" target="_blank" rel="noopener">Ver código</a>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section id="experiencia" class="secao casca">
+      <header class="cab">
+        <p class="rotulo">Experiência</p>
+        <h2>De aprendiz em indústria a TI corporativa</h2>
+      </header>
       <ol class="linha">
         <li>
-          <div class="periodo">2024 – 2026</div>
-          <h3>Técnico de Suporte Júnior · <span>Positivo S+</span></h3>
-          <ul>
-            <li>Desenvolvimento de aplicações internas em <b>Power Apps</b> e automação de processos com <b>Power Automate</b>, reduzindo tarefas manuais da operação.</li>
-            <li>Atendimento de chamados com registro, triagem e acompanhamento até o encerramento, em <b>ServiceNow</b> e <b>GLPI</b>.</li>
-            <li>Dashboards em <b>Power BI</b> para indicadores de atendimento.</li>
-            <li>Monitoramento de infraestrutura e disponibilidade com <b>SolarWinds</b>.</li>
-            <li>Documentação de procedimentos e base de conhecimento em <b>SharePoint</b>.</li>
-          </ul>
+          <div class="quando">2024 – 2026</div>
+          <div>
+            <h3>Técnico de Suporte Júnior <span>· Positivo S+</span></h3>
+            <ul>
+              <li>Desenvolvimento de aplicações internas em <b>Power Apps</b> e automação de processos com <b>Power Automate</b>, reduzindo tarefas manuais da operação.</li>
+              <li>Atendimento de chamados com registro, triagem e acompanhamento até o encerramento, em <b>ServiceNow</b> e <b>GLPI</b>.</li>
+              <li>Dashboards em <b>Power BI</b> para indicadores de atendimento.</li>
+              <li>Monitoramento de infraestrutura e disponibilidade com <b>SolarWinds</b>.</li>
+              <li>Documentação de procedimentos e base de conhecimento em <b>SharePoint</b>.</li>
+              <li>Atendimento direto a usuários de áreas de negócio, traduzindo necessidade em solução técnica.</li>
+            </ul>
+          </div>
         </li>
         <li>
-          <div class="periodo">2022 – 2023</div>
-          <h3>Aprendiz, Infraestrutura de TI · <span>Louis Dreyfus Company</span></h3>
-          <ul>
-            <li>Apoio à equipe de infraestrutura em ambiente corporativo multinacional.</li>
-            <li>Suporte a usuários, preparação e manutenção de equipamentos e rotinas de rede.</li>
-          </ul>
+          <div class="quando">2022 – 2023</div>
+          <div>
+            <h3>Aprendiz, Infraestrutura de TI <span>· Louis Dreyfus Company</span></h3>
+            <ul>
+              <li>Apoio à equipe de infraestrutura em ambiente corporativo multinacional.</li>
+              <li>Suporte a usuários, preparação e manutenção de equipamentos e rotinas de rede.</li>
+            </ul>
+          </div>
         </li>
         <li>
-          <div class="periodo">2021 – 2022</div>
-          <h3>Jovem Aprendiz · <span>CANPACK</span></h3>
-          <ul><li>Rotinas administrativas e operacionais em indústria de grande porte.</li></ul>
+          <div class="quando">2021 – 2022</div>
+          <div>
+            <h3>Jovem Aprendiz <span>· CANPACK</span></h3>
+            <ul><li>Rotinas administrativas e operacionais em indústria de grande porte.</li></ul>
+          </div>
         </li>
       </ol>
     </section>
 
-    <section id="projetos">
-      <h2>Projetos</h2>
-      <p class="nota">Projetos pessoais de estudo, sem dados de empresa. Os sistemas que construí na Positivo pertencem à empresa e não estão aqui.</p>
-      <div class="grade">
-        <article class="cartao projeto">
-          <h3>Central de Chamados</h3>
-          <p>Fila de chamados com prioridade, prazo de SLA calculado e painel de indicadores. Roda no navegador, sem servidor. O mesmo processo que eu atendia no ServiceNow, construído do zero.</p>
-          <ul class="tags"><li>JavaScript</li><li>HTML</li><li>CSS</li></ul>
-          <div class="acoes">
-            <a class="btn primario" href="https://eguiedson.github.io/central-de-chamados/" target="_blank" rel="noopener">Abrir</a>
-            <a class="btn" href="https://github.com/Eguiedson/central-de-chamados" target="_blank" rel="noopener">Código</a>
-          </div>
-        </article>
-        <article class="cartao projeto">
-          <h3>Scripts de suporte de TI</h3>
-          <p>Scripts PowerShell para a rotina de suporte: inventário da máquina em HTML, checagem de saúde (disco, serviços, tempo ligado) e limpeza de temporários com modo de simulação.</p>
-          <ul class="tags"><li>PowerShell</li><li>Windows</li><li>Suporte N1/N2</li></ul>
-          <div class="acoes">
-            <a class="btn" href="https://github.com/Eguiedson/scripts-suporte-ti" target="_blank" rel="noopener">Código</a>
-          </div>
-        </article>
+    <section id="competencias" class="secao casca">
+      <header class="cab">
+        <p class="rotulo">Competências</p>
+        <h2>Onde eu já entrego e o que estou estudando</h2>
+      </header>
+      <div class="grupos">
+        <div class="grupo">
+          <h3>Power Platform</h3>
+          <p>Aplicações internas, fluxos de aprovação e notificação, dashboards e listas.</p>
+          <ul class="tags"><li>Power Apps</li><li>Power Automate</li><li>Power BI</li><li>SharePoint</li></ul>
+        </div>
+        <div class="grupo">
+          <h3>Suporte e ITSM</h3>
+          <p>Chamados do registro ao encerramento, incidentes e monitoramento de disponibilidade.</p>
+          <ul class="tags"><li>ServiceNow</li><li>GLPI</li><li>SolarWinds</li><li>N1/N2</li></ul>
+        </div>
+        <div class="grupo">
+          <h3>Indústria e processos</h3>
+          <p>Instrumentação, automação industrial e logística: entendo como a operação funciona.</p>
+          <ul class="tags"><li>Instrumentação</li><li>Automação industrial</li><li>Logística</li></ul>
+        </div>
+        <div class="grupo estudo">
+          <h3>Estudando agora</h3>
+          <p>SAP ABAP, Eclipse ADT e SAPUI5 com mentoria de consultor SAP. Engenharia de Software desde 2026. Claude Code e MCP como apoio no desenvolvimento.</p>
+          <ul class="tags"><li>SAP ABAP</li><li>SAPUI5</li><li>JavaScript</li><li>Git</li></ul>
+        </div>
+      </div>
+
+      <div class="cursos">
+        <h3>Cursos técnicos</h3>
+        <ul>
+          <li><b>Instrumentista Industrial</b><span>FIEG/SENAI Catalão · 2020</span></li>
+          <li><b>Automação Industrial</b><span>FIEG/SENAI Catalão · 2020</span></li>
+          <li><b>Mecânico Industrial</b><span>FIEG/SENAI Itumbiara · 2021</span></li>
+          <li><b>Eletricista de Sistemas de Energias Renováveis</b><span>IFG Itumbiara · 2022</span></li>
+          <li><b>Operações Logísticas</b><span>FIEG/SENAI Itumbiara · 2023</span></li>
+        </ul>
       </div>
     </section>
 
-    <section>
-      <h2>Estudando agora</h2>
-      <div class="grade">
-        <article class="cartao">
-          <h3>SAP ABAP</h3>
-          <p>ABAP, Eclipse ADT e SAPUI5, com mentoria de consultor SAP.</p>
-        </article>
-        <article class="cartao">
-          <h3>Engenharia de Software</h3>
-          <p>Graduação em andamento, desde 2026. JavaScript, Git e banco de dados.</p>
-        </article>
-        <article class="cartao">
-          <h3>Desenvolvimento com IA</h3>
-          <p>Claude Code e MCP como apoio no desenvolvimento, inclusive neste site.</p>
-        </article>
-      </div>
-    </section>
-
-    <section>
-      <h2>Cursos técnicos</h2>
-      <ul class="cursos">
-        <li><b>Instrumentista Industrial</b> · FIEG/SENAI Catalão · 2020</li>
-        <li><b>Automação Industrial</b> · FIEG/SENAI Catalão · 2020</li>
-        <li><b>Mecânico Industrial</b> · FIEG/SENAI Itumbiara · 2021</li>
-        <li><b>Eletricista de Sistemas de Energias Renováveis</b> · IFG Itumbiara · 2022</li>
-        <li><b>Operações Logísticas</b> · FIEG/SENAI Itumbiara · 2023</li>
-      </ul>
-    </section>
-
-    <section id="contato" class="contato">
-      <h2>Vamos conversar</h2>
-      <p>Procuro vaga de Analista de TI, Power Platform ou SAP ABAP júnior. Remoto, ou presencial em Itumbiara e região.</p>
-      <div class="acoes">
-        <a class="btn primario" href="mailto:eguiedsonc2000@gmail.com">eguiedsonc2000@gmail.com</a>
-        <a class="btn" href="https://www.linkedin.com/in/eguiedson-cardoso-filho-a59444230" target="_blank" rel="noopener">LinkedIn</a>
+    <section id="contato" class="secao casca">
+      <div class="contato">
+        <div>
+          <p class="rotulo">Contato</p>
+          <h2>Procuro vaga de Analista de TI, Power Platform ou SAP ABAP júnior</h2>
+          <p>Remoto, ou presencial em Itumbiara, Uberlândia, Goiânia, Catalão, Rio Verde e Anápolis.</p>
+        </div>
+        <div class="contato-acoes">
+          <div class="email">
+            <span>eguiedsonc2000@gmail.com</span>
+            <button class="btn" type="button" data-copiar="eguiedsonc2000@gmail.com">Copiar</button>
+          </div>
+          <div class="acoes">
+            <a class="btn primario" href="mailto:eguiedsonc2000@gmail.com">Enviar e-mail</a>
+            <a class="btn" href="https://www.linkedin.com/in/eguiedson-cardoso-filho-a59444230" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="btn" href="https://github.com/Eguiedson" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer class="rodape">
-    Site em HTML e CSS, feito com apoio do Claude Code · <a href="https://github.com/Eguiedson/Eguiedson.github.io">código</a>
+  <footer class="rodape casca">
+    <span>Eguiedson Cardoso Filho · Itumbiara – GO</span>
+    <span>Site em HTML, CSS e JavaScript, feito com apoio do Claude Code · <a href="https://github.com/Eguiedson/Eguiedson.github.io" target="_blank" rel="noopener">código</a></span>
   </footer>
+
+  <div class="aviso" id="aviso" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
 </body>
 </html>
